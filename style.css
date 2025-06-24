@@ -1,0 +1,103 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+h2 {
+  text-align: center;
+  color: #4A90E2;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #357ABD;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+button#toggleTheme {
+  padding: 8px 14px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button#toggleTheme:hover {
+  background-color: #555;
+}
+
+/* Dark Theme */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .container {
+  background-color: #1E1E1E;
+  color: white;
+}
+
+body.dark-mode input {
+  background-color: #2C2C2C;
+  color: white;
+  border: 1px solid #555;
+}
+
+body.dark-mode .submit-btn {
+  background-color: #BB86FC;
+}
+
+body.dark-mode .submit-btn:hover {
+  background-color: #9D6DFB;
+}

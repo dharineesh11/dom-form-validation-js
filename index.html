@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Styled Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="theme-toggle">
+    <button id="toggleTheme">🌙 Toggle Theme</button>
+  </div>
+
+  <div class="container">
+    <h2>Registration Form</h2>
+    <form id="myForm">
+      <label>Name:</label>
+      <input type="text" id="name">
+      <span id="nameError" class="error"></span>
+
+      <label>Email:</label>
+      <input type="text" id="email">
+      <span id="emailError" class="error"></span>
+
+      <label>Password:</label>
+      <input type="password" id="password">
+      <span id="passError" class="error"></span>
+
+      <label>Confirm Password:</label>
+      <input type="password" id="confirmPassword">
+      <span id="confirmError" class="error"></span>
+
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
